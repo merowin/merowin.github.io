@@ -1,3 +1,7 @@
+* {
+    background:rgba(0,0,0,0.2);
+}
+
 main {
     animation: rotateContainer 60000s linear;
 }
