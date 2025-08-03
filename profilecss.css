@@ -1,3 +1,22 @@
 main {
-  transform: rotate(10deg);
+    animation: rotateContainer cubic-bezier(.5,1730,.5,-1730) infinite;
+}
+main > * {
+    animation: rotateContents cubic-bezier(.5,1730,.5,-1730) infinite;
+}
+
+@keyframes rotateContainer {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(45deg) }
+  50%: { transform: rotate(0deg) }
+  75% { transform: rotate(-45deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes rotateContents {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(-45deg) }
+  50%: { transform: rotate(0deg) }
+  75% { transform: rotate(45deg) }
+  100% { transform: rotate(0deg) }
 }
