@@ -1,20 +1,22 @@
 * {
-    background:rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
 }
 
 main {
-    animation: rotateContainer 60000s linear;
+    animation: rotateContainer 600s linear;
 }
 main :not(:has(*)) {
-    animation: rotateContents 60000s linear;
+    animation: rotateContents 600s linear;
 }
 
 @keyframes rotateContainer {
-  0% { transform: rotate(180deg); }
-  100% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+  0% { transform: rotate(0deg); }
 }
 
 @keyframes rotateContents {
-  0% { transform: rotate(180deg); }
-  100% { transform: rotate(05deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-180deg); }
+  0% { transform: rotate(0deg); }
 }
