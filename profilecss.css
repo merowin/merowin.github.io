@@ -1,22 +1,16 @@
 main {
-    animation: rotateContainer 5s infinite cubic-bezier(.5,1730,.5,-1730);
+    animation: rotateContainer 10s infinite cubic-bezier(.5,1730,.5,-1730);
 }
 main > * {
-    animation: rotateContents 5s infinite cubic-bezier(.5,1730,.5,-1730);
+    animation: rotateContents 10s infinite cubic-bezier(.5,1730,.5,-1730);
 }
 
 @keyframes rotateContainer {
-  0% { transform: rotate(0deg) }
-  25% { transform: rotate(45deg) }
-  50%: { transform: rotate(0deg) }
-  75% { transform: rotate(-45deg) }
-  100% { transform: rotate(0deg) }
+  0% { transform: rotate(45deg); }
+  100% { transform: rotate(-45deg); }
 }
 
 @keyframes rotateContents {
-  0% { transform: rotate(0deg) }
-  25% { transform: rotate(-45deg) }
-  50%: { transform: rotate(0deg) }
-  75% { transform: rotate(45deg) }
-  100% { transform: rotate(0deg) }
+  0% { transform: rotate(-45deg); }
+  100% { transform: rotate(45deg); }
 }
