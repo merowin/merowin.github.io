@@ -1,7 +1,7 @@
 main {
     animation: rotateContainer 10s cubic-bezier(.5,1730,.5,-1730) infinite;
 }
-main > * {
+main :not(:has(*)) {
     animation: rotateContents 10s cubic-bezier(.5,1730,.5,-1730) infinite;
 }
 
