@@ -1,5 +1,6 @@
 * {
     background: rgba(0,0,0,0.2);
+    overflow: visible;
 }
 
 main {
