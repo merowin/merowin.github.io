@@ -1,8 +1,8 @@
 main {
-    animation: rotateContainer 10s infinite cubic-bezier(.5,1730,.5,-1730);
+    animation: rotateContainer 10s cubic-bezier(.5,1730,.5,-1730) infinite;
 }
 main > * {
-    animation: rotateContents 10s infinite cubic-bezier(.5,1730,.5,-1730);
+    animation: rotateContents 10s cubic-bezier(.5,1730,.5,-1730) infinite;
 }
 
 @keyframes rotateContainer {
