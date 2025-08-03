@@ -1,18 +1,16 @@
 main {
-    transform-origin: 0% 50%;
-    animation: rotateContainer 60000s cubic-bezier(.5,1730,.5,-1730) infinite;
+    animation: rotateContainer 60000s linear;
 }
 main :not(:has(*)) {
-    transform-origin: 0% 50%;
-    animation: rotateContents 60000s cubic-bezier(.5,1730,.5,-1730) infinite;
+    animation: rotateContents 60000s linear;
 }
 
 @keyframes rotateContainer {
-  0% { transform: rotate(45deg); }
-  100% { transform: rotate(-45deg); }
+  0% { transform: rotate(180deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes rotateContents {
-  0% { transform: rotate(-45deg); }
-  100% { transform: rotate(45deg); }
+  0% { transform: rotate(180deg); }
+  100% { transform: rotate(05deg); }
 }
